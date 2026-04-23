@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: smart-vaname-server
+    runtime: node
+    repo: https://github.com/username/myrepo
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS_JSON
+        sync: false
